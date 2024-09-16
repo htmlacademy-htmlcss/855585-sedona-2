@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Елена Покровская](https://up.htmlacademy.ru/htmlcss-individual/2/user/855585).
-* Наставник: `Неизвестно`.
+* Наставник: [Дарья Шестерина](https://htmlacademy.ru/profile/id221124).
 
 ---
 
