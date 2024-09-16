@@ -2,6 +2,7 @@
 
 * Студент: [Елена Покровская](https://up.htmlacademy.ru/htmlcss-individual/2/user/855585).
 * Наставник: [Дарья Шестерина](https://htmlacademy.ru/profile/id221124).
+* Сайт: [Мой проект Седона](https://lenapokrovskaya.github.io/855585-sedona-2/)
 
 ---
 
