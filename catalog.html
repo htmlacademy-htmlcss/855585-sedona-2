@@ -7,7 +7,7 @@
   </head>
 
   <body class="page-body">
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="nav">
         <a class="nav-logo">
           <img class="nav-logo-img" src="index.html" alt="Логотип Седоны">
@@ -39,8 +39,8 @@
       </nav>
       <button class="page-header-button button button-primary" type="button">Хочу сюда!</button>
     </header>
-    <main class="catalog-page">
-      <section class="catalog-head">
+    <main class="catalog-page" data-test="main">
+      <section class="catalog-head" data-test="filter">
         <h1 class="catalog-head-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs-list">
           <li class="breadcrumbs-item">
@@ -97,7 +97,7 @@
           <button class="filter-form-button button button-transparent" type="reset">Сбросить</button>
         </form>
       </section>
-      <section class="catalog">
+      <section class="catalog" data-test="catalog">
         <header class="catalog-header">
           <h2 class="catalog-title">Найдено гостиниц:<span>38</span></h2>
           <label for="select-sort">
@@ -227,7 +227,7 @@
           </li>
         </ul>
       </section>
-      <section class="subscribe subscribe-catalog">
+      <section class="subscribe subscribe-catalog" data-test="subscribe">
         <div class="subscribe-container lead">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -240,7 +240,7 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <ul class="socials">
         <li class="socials-item">
           <a class="socials-item-link" href="https://vk.com/htmlacademy">

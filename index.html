@@ -7,7 +7,7 @@
   </head>
 
   <body class="page-body">
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="nav">
         <a class="nav-logo">
           <img class="nav-logo-img" src="#" alt="Логотип Седоны">
@@ -39,12 +39,12 @@
       </nav>
       <button class="page-header-button button button-primary" type="button">Хочу сюда!</button>
     </header>
-    <main class="main-index">
-      <section class="intro">
+    <main class="main-index" data-test="main">
+      <section class="intro" data-test="hero">
         <h1 class="visually-hidden">Седона — туристический городок в Аризоне</h1>
         <img class="intro-img" src="#" alt="Welcome to the gorgeus Sedona. Because the Grand Canyon sucks!">
       </section>
-      <section class="advantages">
+      <section class="advantages" data-test="advantages">
         <header class="advantages-header lead">
           <h2 class="visually-hidden">Преимущества Седоны</h2>
           <p class="advantages-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
@@ -110,7 +110,7 @@
           </li>
         </ul>
       </section>
-      <section class="booking">
+      <section class="booking" data-test="search">
         <div class="booking-container lead">
           <h2 class="visually-hidden">Поиск гостиницы</h2>
           <p class="booking-title">Заинтересовались?</p>
@@ -119,7 +119,7 @@
         </div>
         <a class="booking-button button button-primary" href="catalog.html">Поиск гостиницы в Седоне</a>
       </section>
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
         <div class="subscribe-container lead">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -132,7 +132,7 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <ul class="socials">
         <li class="socials-item">
           <a class="socials-item-link" href="https://vk.com/htmlacademy">
