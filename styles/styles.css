@@ -1,0 +1,385 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    font-style: normal;
+    background-color: #f2f2f2;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.button {
+    display: inline-block;
+    font-family: "PT Sans";
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 8px 50px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-primary {
+    background-color: #756157;
+}
+
+.button-secondary {
+    font-size: 20px;
+    line-height: 36px;
+    background-color: #82b3d3;
+}
+
+.button-transparent {
+    background-color: transparent;
+    padding: 8px 57.5px;
+}
+
+.title-h-three {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+
+.page-header-button {
+    padding: 8px 34px;
+}
+
+.nav-list,
+.nav-user {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.nav-link,
+.nav-user-link {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.nav-user-link-badge {
+    font-size: 10px;
+    line-height: 10px;
+    background-color: #7db54f;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.intro {
+    background-image: url("../images/index.jpg");
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: cover;
+    background-color: #D9E9F3;
+}
+
+.advantages-list,
+.services-list {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.advantages-item {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+
+.advantages-item-dark {
+    background-color: #82B3D3;
+}
+
+.advantages-item-light {
+    background-color: #ffffff;
+}
+
+
+.advantages-card-description,
+.services-item-description {
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0;
+    color: #333333
+}
+
+.services-item:nth-child(odd) {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.lead {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.lead-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+.lead-description {
+    margin: 0;
+}
+
+.booking-button {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.subscribe-with-image {
+    background-image: url("../images/subscribe.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+
+.subscribe-form {
+    text-align: center;
+}
+
+.subscribe-input {
+    width: 452px;
+    border-radius: 4px 0 0 4px;
+}
+
+.subscribe-form-button {
+    border-radius: 0 4px 4px 0;
+}
+
+
+.form-input {
+    font-family: "PT Sans";
+    font-size: 18px;
+    line-height: 24px;
+    padding: 14px 20px;
+    border: none;
+    outline: none;
+    background-color: #f2f2f2;
+}
+
+.page-footer-phone {
+    font-size: 40px;
+    line-height: 40px;
+    color: #000000;
+}
+
+/* catalog */
+
+.catalog-page-head {
+    background-color: #85645B;
+    background-image: url("../images/filter.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.catalog-page-title {
+    font-size: 60px;
+    line-height: 78px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.breadcrumbs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumbs-link {
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+.form-fieldset {
+    border: none;
+    padding: 0;
+    color: #ffffff;
+}
+
+.form-fieldset-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    padding: 0;
+}
+
+.form-fieldset-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.form-fieldset-item {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.form-range-input {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.filter-form-button {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+
+.select-control {
+    min-width: 292px;
+    max-height: 49px;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 0 0 2px #e5e5e5 inset;
+}
+
+.card-sizes-button {
+    display: inline-block;
+    width: 48px;
+    min-height: 48px;
+    padding: 0;
+    border-radius: 4px;
+    box-shadow: 0 0 0 2px #e5e5e5 inset;
+}
+
+.card-sizes-button-current {
+    box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.catalog-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.catalog-card-title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
+}
+
+.catalog-card-type,
+.catalog-card-price {
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    margin: 0;
+}
+
+.catalog-card-button {
+    width: 140px;
+    padding: 8px 26px;
+}
+
+.button-favorite {
+    background-color: #82B3D3;
+    padding: 8px 18px;
+}
+
+.button-favorite-selected {
+    background-color: #7DB54F;
+}
+
+.catalog-card-rating {
+    max-width: 140px;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 9px 22px;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+}
+
+.pagination-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pagination-link {
+    display: inline-block;
+    width: 60px;
+    min-height: 60px;
+    font-size: 20px;
+    line-height: 36px;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #82b3d3;
+}
+
+.pagination-current {
+    color: #000000;
+    background-color: #f2f2f2;
+}

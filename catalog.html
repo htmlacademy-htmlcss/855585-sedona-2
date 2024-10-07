@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body class="page-body">
@@ -111,7 +112,7 @@
       </section>
       <section class="catalog" data-test="catalog">
         <header class="catalog-header">
-          <h2 class="catalog-title">Найдено гостиниц:<span>38</span></h2>
+          <h2 class="catalog-title lead-title">Найдено гостиниц:<span>38</span></h2>
           <label class="visually-hidden" for="select-sort">Сортировка карточек</label>
           <select class="select-control" id="select-sort" aria-label="Сортировка">
             <option value="cheap">Сначала дешевые</option>
@@ -143,7 +144,7 @@
               <p class="catalog-card-type">Гостиница</p>
               <p class="catalog-card-price">От 4000 ₽</p>
               <a class="catalog-card-button button button-primary" href="#">Подробнее</a>
-              <a class="catalog-card-button button button-favorite" href="#">В избранное</a>
+              <button class="catalog-card-button button button-favorite" type="button">В избранное</button>
               <div class="catalog-card-stars four-stars">
                 <span class="visually-hidden">Звездность: 4 звезды</span>
               </div>
@@ -162,7 +163,7 @@
               <p class="catalog-card-type">Гостиница</p>
               <p class="catalog-card-price">От 5000 ₽</p>
               <a class="catalog-card-button button button-primary" href="#">Подробнее</a>
-              <a class="catalog-card-button button button-favorite" href="#">В избранное</a>
+              <button class="catalog-card-button button button-favorite button-favorite-selected" type="button">В избранном</button>
               <div class="catalog-card-stars four-stars">
                 <span class="visually-hidden">Звездность: 4 звезды</span>
               </div>
@@ -181,7 +182,7 @@
               <p class="catalog-card-type">Гостиница</p>
               <p class="catalog-card-price">От 2500 ₽</p>
               <a class="catalog-card-button button button-primary" href="#">Подробнее</a>
-              <a class="catalog-card-button button button-favorite" href="#">В избранное</a>
+              <button class="catalog-card-button button button-favorite" type="button">В избранное</button>
               <div class="catalog-card-stars three-stars">
                 <span class="visually-hidden">Звездность: 3 звезды</span>
               </div>
@@ -200,7 +201,7 @@
               <p class="catalog-card-type">Гостиница</p>
               <p class="catalog-card-price">От 1500 ₽</p>
               <a class="catalog-card-button button button-primary" href="#">Подробнее</a>
-              <a class="catalog-card-button button button-favorite" href="#">В избранное</a>
+              <button class="catalog-card-button button button-favorite" type="button">В избранное</button>
               <div class="catalog-card-stars two-stars">
                 <span class="visually-hidden">Звездность: 2 звезды</span>
               </div>
@@ -236,7 +237,7 @@
         </div>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="subscribe-email">Введите E-mail</label>
-          <input class="form-input" type="email" name="user-email" id="subscribe-email" placeholder="Ваш e-mail">
+          <input class="subscribe-input form-input" type="email" name="user-email" id="subscribe-email" placeholder="Ваш e-mail">
           <button class="subscribe-form-button button button-secondary" type="submit">Подписаться</button>
         </form>
       </section>
