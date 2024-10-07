@@ -22,7 +22,6 @@
 
 body {
     margin: 0;
-    padding: 0;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 22px;
     line-height: 26px;
@@ -55,13 +54,15 @@ img {
 
 .button {
     display: inline-block;
-    font-family: "PT Sans";
+    padding: 8px 16px;
+    font-family: inherit;
     font-size: 16px;
+    font-style: inherit;
     line-height: 20px;
     font-weight: 700;
     text-transform: uppercase;
+    text-decoration: none;
     color: #ffffff;
-    padding: 8px 50px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -78,19 +79,26 @@ img {
 }
 
 .button-transparent {
-    background-color: transparent;
     padding: 8px 57.5px;
+    background-color: transparent;
+}
+
+.button-favorite {
+    padding: 8px 18px;
+    background-color: #82B3D3;
+}
+
+.button-favorite-selected {
+    background-color: #7DB54F;
 }
 
 .title-h-three {
+    margin: 0;
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
-    padding: 0;
-    margin: 0;
     text-transform: uppercase;
 }
-
 
 .page-header-button {
     padding: 8px 34px;
@@ -98,9 +106,9 @@ img {
 
 .nav-list,
 .nav-user {
-    list-style: none;
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
 
@@ -109,7 +117,7 @@ img {
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
-    color: #000000;
+    color: inherit;
 }
 
 .nav-user-link-badge {
@@ -130,10 +138,10 @@ img {
 
 .advantages-list,
 .services-list {
-    list-style: none;
-    text-align: center;
     padding: 0;
     margin: 0;
+    list-style: none;
+    text-align: center;
 }
 
 .advantages-item {
@@ -152,9 +160,9 @@ img {
 
 .advantages-card-description,
 .services-item-description {
+    margin: 0;
     font-size: 18px;
     line-height: 21px;
-    margin: 0;
     color: #333333
 }
 
@@ -163,18 +171,16 @@ img {
 }
 
 .lead {
-    text-align: center;
-    padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 .lead-title {
+    margin: 0;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 0;
-    margin: 0;
 }
 
 .lead-description {
@@ -209,10 +215,10 @@ img {
 
 
 .form-input {
+    padding: 14px 20px;
     font-family: "PT Sans";
     font-size: 18px;
     line-height: 24px;
-    padding: 14px 20px;
     border: none;
     outline: none;
     background-color: #f2f2f2;
@@ -221,7 +227,7 @@ img {
 .page-footer-phone {
     font-size: 40px;
     line-height: 40px;
-    color: #000000;
+    color: inherit;
 }
 
 /* catalog */
@@ -234,17 +240,17 @@ img {
 }
 
 .catalog-page-title {
+    margin: 0;
     font-size: 60px;
     line-height: 78px;
     font-weight: 700;
     color: #ffffff;
-    margin: 0;
 }
 
 .breadcrumbs {
-    list-style: none;
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 .breadcrumbs-link {
@@ -254,22 +260,22 @@ img {
 }
 
 .form-fieldset {
-    border: none;
     padding: 0;
+    border: none;
     color: #ffffff;
 }
 
 .form-fieldset-title {
+    padding: 0;
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
-    padding: 0;
 }
 
 .form-fieldset-list {
-    list-style: none;
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
 .form-fieldset-item {
@@ -289,15 +295,16 @@ img {
     font-weight: 700;
 }
 
-
 .select-control {
     min-width: 292px;
     max-height: 49px;
+    padding: 14px 20px;
     font-size: 18px;
     line-height: 21px;
-    padding: 14px 20px;
     border: none;
     border-radius: 4px;
+    color: #333333;
+    background-color: #ffffff;
     box-shadow: 0 0 0 2px #e5e5e5 inset;
 }
 
@@ -315,56 +322,46 @@ img {
 }
 
 .catalog-list {
-    list-style: none;
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 .catalog-card-title {
+    margin: 0;
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
     color: #000000;
-    margin: 0;
 }
 
 .catalog-card-type,
 .catalog-card-price {
+    margin: 0;
     font-size: 18px;
     line-height: 21px;
     color: #333333;
-    margin: 0;
 }
 
 .catalog-card-button {
-    width: 140px;
     padding: 8px 26px;
-}
-
-.button-favorite {
-    background-color: #82B3D3;
-    padding: 8px 18px;
-}
-
-.button-favorite-selected {
-    background-color: #7DB54F;
 }
 
 .catalog-card-rating {
     max-width: 140px;
+    margin: 0;
+    padding: 9px 22px;
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
-    margin: 0;
-    padding: 9px 22px;
     background-color: #F2F2F2;
     border-radius: 4px;
 }
 
 .pagination-list {
-    list-style: none;
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
 .pagination-link {
@@ -380,6 +377,6 @@ img {
 }
 
 .pagination-current {
-    color: #000000;
+    color: inherit;
     background-color: #f2f2f2;
 }
