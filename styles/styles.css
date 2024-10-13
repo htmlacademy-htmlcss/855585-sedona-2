@@ -68,6 +68,15 @@ img {
     flex-grow: 1;
 }
 
+.container {
+    width: 100%;
+    max-width: 1090px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* buttons */
 
 .button {
@@ -78,6 +87,7 @@ img {
     font-style: inherit;
     line-height: 20px;
     font-weight: 700;
+    text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     border: none;
@@ -121,6 +131,7 @@ img {
     font-weight: 700;
     color: #000000;
 }
+
 .title-h-three {
     margin: 0;
     font-size: 24px;
@@ -133,26 +144,25 @@ img {
 /* page-header */
 
 .page-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1060px;
-    margin: 0 auto;
     color: #000000;
 }
 
 .page-header-button {
     min-width: 160px;
+    margin-left: 20px;
 }
 
 .nav {
     display: flex;
-    justify-content: space-between;
-    width: 880px;
+    align-items: center;
+    width: 1060px;
+    column-gap: 30px;
+    margin: 0 auto;
 }
 
 .nav-logo {
     position: relative;
+    margin-bottom: -6px;
 }
 
 .nav-logo-img {
@@ -161,20 +171,43 @@ img {
 
 .nav-list {
     display: flex;
-    width: 339px;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 450px;
+    gap: 32px;
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
 .nav-user {
-    max-width: 268px;
-    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     padding: 0;
+    margin: 0;
+    margin-left: auto;
     list-style: none;
 }
 
-.nav-link,
+.nav-link {
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 18px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link-current {
+    position: relative;
+    z-index: 1;
+    border-bottom: 2px solid #756257;
+}
+
 .nav-user-link {
     font-size: 20px;
     line-height: 24px;
@@ -182,6 +215,7 @@ img {
     color: inherit;
     text-decoration: none;
 }
+
 
 .nav-user-link-badge {
     font-size: 10px;
@@ -194,11 +228,22 @@ img {
 /* footer */
 
 .page-footer {
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.page-footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 40px;
-    padding-bottom: 30px;
+}
+
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .page-footer-phone {
@@ -211,8 +256,7 @@ img {
 /* lead */
 
 .lead {
-    margin: 0;
-    margin-bottom: 54px;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -232,7 +276,6 @@ img {
 /* intro */
 
 .intro {
-    margin-top: -6px;
     padding-top: 51px;
     padding-bottom: 82px;
     background-image: url("../images/index.jpg");
@@ -251,7 +294,6 @@ img {
 .advantages-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -275,16 +317,19 @@ img {
 }
 
 .advantages-header {
+    max-width: 651px;
     margin-bottom: 69px;
 }
 
 .advantages-header .lead-title {
     margin-bottom: 25px;
 }
+
 .advantages-item {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 385px;
     background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -295,7 +340,7 @@ img {
 .advantages-item-dark {
     display: flex;
     align-items: center;
-    grid-column: span 3;
+    grid-column: -1 / 1;
     background-color: #82B3D3;
     color: #ffffff;
 }
@@ -314,11 +359,13 @@ img {
 }
 
 .services-header {
+    max-width: 505px;
     margin-bottom: 64px;
 }
 
 .services-list {
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -342,6 +389,11 @@ img {
     text-align: center;
 }
 
+.booking-container {
+    max-width: 592px;
+    margin-bottom: 54px;
+}
+
 .booking-button {
     min-width: 376px;
 }
@@ -363,8 +415,14 @@ img {
     color: inherit;
 }
 
+.subscribe-container {
+    max-width: 475px;
+    margin-bottom: 54px;
+}
+
 .subscribe-form {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .subscribe-input {
@@ -394,7 +452,6 @@ img {
 /* catalog-page-head */
 
 .catalog-page-head {
-    margin-top: -6px;
     padding-top: 35px;
     padding-bottom: 70px;
     background-color: #85645B;
@@ -428,15 +485,21 @@ img {
 
 .filter-form {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    gap: 70px;
 }
 
 .form-fieldset {
     padding: 0;
     margin: 0;
     border: none;
+}
+
+.form-fieldset:nth-child(2) {
+    margin-right: auto;
 }
 
 .form-fieldset-title {
@@ -453,14 +516,41 @@ img {
     list-style: none;
 }
 
+.form-checkbox,
+.form-radio {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.form-range-input-container {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 36px;
+}
+
 .form-range-input {
+    min-width: 143px;
     min-height: 48px;
     font-weight: 700;
+    padding: 12px 20px;
+}
+
+.form-range-input:first-child {
+    border-radius: 4px 0 0 4px;
+}
+
+.form-range-input:last-child {
+    border-radius: 0 4px 4px 0;
+}
+
+.form-range-setting {
+    margin: 0;
 }
 
 .filter-form-buttons-container {
     display: flex;
     flex-direction: column;
+    gap: 32px;
 }
 
 .filter-form-button {
@@ -499,6 +589,12 @@ img {
     border: 2px solid #e5e5e5;
 }
 
+.card-sizes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
 .card-sizes-button {
     display: inline-block;
     width: 48px;
@@ -514,16 +610,32 @@ img {
 
 .catalog-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 345px);
+    justify-content: center;
     gap: 20px;
+    padding: 0;
     margin: 0;
     margin-bottom: 40px;
-    padding: 0;
     list-style: none;
+}
+
+.catalog-card {
+    display: grid;
+    grid-template-columns: repeat(2, 140px);
+    row-gap: 16px;
+    column-gap: 20px;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+}
+
+.catalog-card-img {
+    display: block;
 }
 
 .catalog-card-link {
     text-decoration: none;
+    grid-column: -1 / 1;
 }
 
 .catalog-card-title {
@@ -556,7 +668,8 @@ img {
 
 .pagination-list {
     display: flex;
-    column-gap: 8px;
+    flex-wrap: wrap;
+    gap: 8px;
     padding: 0;
     margin: 0;
     list-style: none;

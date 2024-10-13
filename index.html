@@ -37,9 +37,11 @@
                 <span class="nav-user-link-badge">12</span>
               </a>
             </li>
+            <li class="nav-user-item">
+              <a class="page-header-button button button-primary" href="#">Хочу сюда!</a>
+            </li>
           </ul>
         </nav>
-        <button class="page-header-button button button-primary" type="button">Хочу сюда!</button>
       </header>
       <main class="main-index main-container" data-test="main">
         <section class="intro" data-test="hero">
@@ -122,7 +124,8 @@
             <p class="lead-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
               гостиниц в Седоне</p>
           </div>
-          <a class="booking-button button button-primary button-lg" href="catalog.html">Поиск гостиницы в Седоне</a>
+          <button class="booking-button button button-primary button-lg" type="button">Поиск гостиницы в
+            Седоне</button>
         </section>
         <section class="subscribe subscribe-with-image" data-test="subscribe">
           <div class="subscribe-container lead">
@@ -132,33 +135,36 @@
           <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="subscribe-email">Введите E-mail</label>
             <input class="subscribe-input form-input" type="email" name="user-email" id="subscribe-email"
-              placeholder="Ваш e-mail">
+              placeholder="Ваш e-mail" required>
             <button class="subscribe-form-button button button-secondary button-lg" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
       <footer class="page-footer" data-test="footer">
-        <ul class="socials">
-          <li class="socials-item">
-            <a class="socials-item-link" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">Vkontakte</span>
-            </a>
-          </li>
-          <li class="socials-item">
-            <a class="socials-item-link" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Telegram</span>
-            </a>
-          </li>
-          <li class="socials-item">
-            <a class="socials-item-link" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">YouTube</span>
-            </a>
-          </li>
-        </ul>
-        <a class="page-footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a class="logo-dev" href="https://htmlacademy.ru/">
-          <img class="logo-dev-img" src="images/logo-developer.svg" width="115" height="33" alt="Логотип HTML Academy">
-        </a>
+        <div class="page-footer-container container">
+          <ul class="socials">
+            <li class="socials-item">
+              <a class="socials-item-link" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Vkontakte</span>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a class="socials-item-link" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Telegram</span>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a class="socials-item-link" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">YouTube</span>
+              </a>
+            </li>
+          </ul>
+          <a class="page-footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="logo-dev" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img class="logo-dev-img" src="images/logo-developer.svg" width="115" height="33"
+              alt="Логотип HTML Academy">
+          </a>
+        </div>
       </footer>
     </div>
   </body>
