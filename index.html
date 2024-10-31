@@ -124,7 +124,7 @@
             <p class="lead-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
               гостиниц в Седоне</p>
           </div>
-          <button class="booking-button button button-primary button-lg" type="button">Поиск гостиницы в
+          <button class="booking-button button button-primary button-lg button-open" type="button">Поиск гостиницы в
             Седоне</button>
         </section>
         <section class="subscribe subscribe-with-image" data-test="subscribe">
@@ -193,7 +193,38 @@
           </a>
         </div>
       </footer>
-    </div>
+      <section class="modal overlay">
+        <div class="modal-container">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <div class="modal-content">
+            <h2 class="modal-title lead-title title-h-two">Поиск гостиницы в Седоне</h2>
+            <form class="modal-form" action="https://echo.htmlacademy.ru">
+              <label class="modal-label modal-label-date">Дата заезда:
+                <input class="modal-input modal-input-date form-input" type="date" required>
+              </label>
+              <label class="modal-label modal-label-date">Дата выезда:
+                <input class="modal-input modal-input-date form-input" type="date" required>
+              </label>
+                <label class="modal-label modal-label-guests-adults">Взрослые:
+                  <input class="modal-input modal-input-guests form-input" type="number" value="2">
+                </label>
+                <label class="modal-label modal-label-guests-kids">Дети:
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button">
+                    </button>
+                    <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст
+                      которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                  <input class="modal-input modal-input-guests form-input" type="number" value="1">
+                </label>
+              <button class="button modal-button button-secondary button-lg" type="submit">Найти</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <script src="js/script.js"></script>
   </body>
 
 </html>

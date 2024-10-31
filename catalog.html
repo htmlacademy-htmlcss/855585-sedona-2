@@ -63,19 +63,19 @@
                 <ul class="form-fieldset-list">
                   <li class="form-fieldset-item">
                     <label class="form-checkbox">
-                      <input class="form-checkbox-input" type="checkbox" name="pool" id="add-pool" checked>
+                      <input class="form-checkbox-input visually-hidden" type="checkbox" name="pool" id="add-pool" checked>
                       <span class="form-checkbox-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="form-fieldset-item">
                     <label class="form-checkbox">
-                      <input class="form-checkbox-input" type="checkbox" name="parking" id="add-parking" checked>
+                      <input class="form-checkbox-input visually-hidden" type="checkbox" name="parking" id="add-parking" checked>
                       <span class="form-checkbox-label">Парковка</span>
                     </label>
                   </li>
                   <li class="form-fieldset-item">
                     <label class="form-checkbox">
-                      <input class="form-checkbox-input" type="checkbox" name="wifi" id="add-wifi">
+                      <input class="form-checkbox-input visually-hidden" type="checkbox" name="wifi" id="add-wifi">
                       <span class="form-checkbox-label">Wi-Fi</span>
                     </label>
                   </li>
@@ -86,19 +86,19 @@
                 <ul class="form-fieldset-list">
                   <li class="form-fieldset-item">
                     <label class="form-radio">
-                      <input class="form-radio-input" type="radio" name="housing" id="add-hotel" value="hotel" checked>
+                      <input class="form-radio-input visually-hidden" type="radio" name="housing" id="add-hotel" value="hotel" checked>
                       <span class="form-radio-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="form-fieldset-item">
                     <label class="form-radio">
-                      <input class="form-radio-input" type="radio" name="housing" id="add-motel" value="motel">
+                      <input class="form-radio-input visually-hidden" type="radio" name="housing" id="add-motel" value="motel">
                       <span class="form-radio-label">Мотель</span>
                     </label>
                   </li>
                   <li class="form-fieldset-item">
                     <label class="form-radio">
-                      <input class="form-radio-input" type="radio" name="housing" id="add-apartments"
+                      <input class="form-radio-input visually-hidden" type="radio" name="housing" id="add-apartments"
                         value="apartments">
                       <span class="form-radio-label">Аппартаменты</span>
                     </label>
@@ -111,7 +111,14 @@
                   <input class="form-range-input form-input" type="number" name="from" value="0" min="0" max="9000">
                   <input class="form-range-input form-input" type="number" name="to" value="9000" min="0" max="9000">
                 </div>
-                <input class="form-range-setting" type="range" name="range" min="0" max="9000" step="1" value="1">
+                <!-- <input class="form-range-setting" type="range" name="range" min="0" max="9000" step="1" value="1"> -->
+                <div class="form-range-scale">
+                  <div class="form-range-bar" style="right: 62px; width: 226px;">
+                    <button class="form-range-toggle form-range-toggle-min" type="button"></button>
+                    <button class="form-range-toggle form-range-toggle-max" type="button"></button>
+                  </div>
+                </div>
+
               </fieldset>
               <div class="filter-form-buttons-container">
                 <button class="filter-form-button button button-secondary" type="submit">Применить</button>
