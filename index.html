@@ -200,31 +200,31 @@
           </button>
           <div class="modal-content">
             <h2 class="modal-title lead-title title-h-two">Поиск гостиницы в Седоне</h2>
-            <form class="modal-form" action="https://echo.htmlacademy.ru">
+            <form class="modal-form" action="https://echo.htmlacademy.ru" method="get">
               <label class="modal-label modal-label-date">Дата заезда:
-                <input class="modal-input modal-input-date form-input" type="text" required>
+                <input class="modal-input modal-input-date form-input" type="text" name="check-in" required>
               </label>
               <label class="modal-label modal-label-date">Дата выезда:
-                <input class="modal-input modal-input-date form-input" type="text" required>
+                <input class="modal-input modal-input-date form-input" type="text" name="check-out" required>
               </label>
-                <label class="modal-label modal-label-guests-adults">Взрослые:
-                  <input class="modal-input modal-input-guests form-input" type="number" value="2">
-                </label>
-                <label class="modal-label modal-label-guests-kids">Дети:
-                  <span class="tooltip">
-                    <button class="tooltip-toggle" type="button">
-                    </button>
-                    <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст
-                      которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-                  </span>
-                  <input class="modal-input modal-input-guests form-input" type="number" value="1">
-                </label>
+              <label class="modal-label modal-label-guests-adults">Взрослые:
+                <input class="modal-input modal-input-guests form-input" type="number" name="guests-adults" value="2">
+              </label>
+              <label class="modal-label modal-label-guests-kids">Дети:
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button"></button>
+                  <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст
+                    которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+                <input class="modal-input modal-input-guests form-input" type="number" name="guests-kids" value="1">
+              </label>
               <button class="button modal-button button-secondary button-lg" type="submit">Найти</button>
             </form>
           </div>
         </div>
       </section>
-      <script src="js/script.js"></script>
+    </div>
+    <script src="js/script.js"></script>
   </body>
 
 </html>
