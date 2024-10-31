@@ -108,8 +108,16 @@
               <fieldset class="form-fieldset">
                 <legend class="form-fieldset-title">Стоимость, ₽:</legend>
                 <div class="form-range-input-container">
-                  <input class="form-range-input form-input" type="number" name="from" value="0" min="0" max="9000">
-                  <input class="form-range-input form-input" type="number" name="to" value="9000" min="0" max="9000">
+                  <label class="form-range-label">
+
+                    <input class="form-range-input form-input" type="number" name="from" value="0" min="0" max="9000">
+                    <span class="form-range-label-text">от</span>
+                  </label>
+                  <label class="form-range-label">
+                    <span class="form-range-label-text">до</span>
+                    <input class="form-range-input form-input" type="number" name="to" value="9000" min="0" max="9000">
+
+                  </label>
                 </div>
                 <!-- <input class="form-range-setting" type="range" name="range" min="0" max="9000" step="1" value="1"> -->
                 <div class="form-range-scale">

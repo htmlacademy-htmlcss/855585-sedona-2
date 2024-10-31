@@ -53,6 +53,9 @@ input[type="number"]:focus {
   -moz-appearance: textfield;
 }
 
+input[type=date]::-webkit-datetime-edit { color: transparent; }
+input[type=date]:focus::-webkit-datetime-edit { color: #000; }
+
 .visually-hidden {
   position: absolute;
   top: 0;
@@ -131,7 +134,6 @@ input[type="number"]:focus {
 .button-primary:active {
   background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
-  ;
 }
 
 .button-primary:disabled {
@@ -292,6 +294,7 @@ input[type="number"]:focus {
   color: inherit;
   text-decoration: none;
   border-bottom: 2px solid transparent;
+  transition: 0.3s ease-in-out;
 }
 
 .nav-link:hover {
@@ -317,6 +320,7 @@ input[type="number"]:focus {
   width: 44px;
   min-height: 64px;
   text-decoration: none;
+  transition: 0.3s ease-in-out;
 }
 
 .nav-user-link::after {
@@ -394,6 +398,7 @@ input[type="number"]:focus {
   display: block;
   min-height: 40px;
   width: 47px;
+  transition: 0.3s ease-in-out;
 }
 
 .socials-icon {
@@ -423,6 +428,7 @@ input[type="number"]:focus {
   line-height: 40px;
   color: #000000;
   text-decoration: none;
+  transition: 0.3s ease-in-out;
 }
 
 .page-footer-phone:hover {
@@ -437,20 +443,21 @@ input[type="number"]:focus {
   color: rgba(117, 97, 87, 0.3);
 }
 
-.logo-dev-img {
-  fill: #000000;
+.logo-dev {
+  color: #000000;
+  transition: 0.3s ease-in-out;
 }
 
-.logo-dev-img:hover {
-  fill: #756157;
+.logo-dev:hover {
+  color: #756157;
 }
 
-.logo-dev-img:focus {
-  fill: #756157;
+.logo-dev:focus {
+  color: #756157;
 }
 
-.logo-dev-img:active {
-  fill: rgba(117, 97, 87, 0.3);
+.logo-dev:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 /* lead */
@@ -480,7 +487,7 @@ input[type="number"]:focus {
   background-image: url("../images/index.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #D9E9F3;
+  background-color: #c4d8e5;
   text-align: center;
 }
 
@@ -557,27 +564,23 @@ input[type="number"]:focus {
 }
 
 .advantages-card-title {
-  position: relative;
-  margin-bottom: 62px;
   width: 175px;
 }
 
-.advantages-card-title::before {
-  position: absolute;
-  top: 86px;
-  left: 50%;
-  transform: translateX(-50%);
+.advantages-card-title::after {
+  display: block;
   width: 60px;
   height: 2px;
   background-color: rgba(0, 0, 0, 0.3);
   content: "";
+  margin: 30px auto;
 }
 
 .advantages-item-dark .advantages-card-title {
   color: #ffffff;
 }
 
-.advantages-item-dark .advantages-card-title::before {
+.advantages-item-dark .advantages-card-title::after {
   background-color: #ffffff;
 }
 
@@ -766,9 +769,6 @@ input[type="number"]:focus {
   color: rgba(255, 255, 255, 0.3);
 }
 
-
-
-
 .breadcrumbs-item:first-child {
   position: relative;
   display: block;
@@ -851,8 +851,6 @@ input[type="number"]:focus {
   opacity: 0.3;
 }
 
-
-
 .form-checkbox,
 .form-radio {
   display: inline-block;
@@ -885,15 +883,19 @@ input[type="number"]:focus {
 .form-radio-label::before {
   content: '';
   display: block;
-  padding: 10px 10px;
+  width: 20px;
+  height: 20px;
   border: 1px solid transparent;
   border-radius: 50%;
   background-color: #ffffff;
 }
 
 .form-radio-input:checked + .form-radio-label::before {
-  background-image: radial-gradient(circle, #3f5e72 4px, transparent 5px);
-  background-position: center;
+  width:20px;
+  height: 20px;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  background-color: #3f5e72;
 }
 
 .form-checkbox-input:focus + .form-checkbox-label::before {
@@ -908,6 +910,19 @@ input[type="number"]:focus {
   display: flex;
   gap: 2px;
   margin-bottom: 36px;
+}
+
+.form-range-label {
+  position: relative;
+}
+
+.form-range-label-text {
+  position: absolute;
+  line-height: 24px;
+  text-align: right;
+  top: 12px;
+  right: 10px;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .form-range-input {
@@ -931,7 +946,6 @@ input[type="number"]:focus {
   height: 4px;
   margin-bottom: 16px;
   background-color: rgba(255, 255, 255, 0.3);
-  ;
 }
 
 .form-range-bar {
@@ -1186,6 +1200,7 @@ input[type="number"]:focus {
   background-color: #82b3d3;
   vertical-align: middle;
   border-radius: 4px;
+  transition: 0.3s ease-in-out;
 }
 
 .pagination-link:hover {
@@ -1199,7 +1214,6 @@ input[type="number"]:focus {
 .pagination-link:active {
   background-color: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
-  ;
 }
 
 .pagination-text {
