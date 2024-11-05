@@ -16,8 +16,8 @@ closePopupButton.addEventListener('click', function () {
   popup.classList.remove('modal-container-open');
 });
 
-document.addEventListener('keydown', function (evt) {
-  if (evt.keyCode === 27) {
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'Escape') {
     overlay.style.display = "none";
     popup.classList.remove('modal-container-open');
   }

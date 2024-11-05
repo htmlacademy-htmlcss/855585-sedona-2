@@ -301,18 +301,23 @@ img {
   display: block;
   width: 44px;
   min-height: 64px;
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: 21px 20px;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-size: 21px 20px;
+          mask-size: 21px 20px;
   background: currentColor;
 }
 
 .nav-user-link-search::after {
-  mask-image: url("../images/icons/search.svg");
+  -webkit-mask-image: url("../images/icons/search.svg");
+          mask-image: url("../images/icons/search.svg");
 }
 
 .nav-user-link-favorites::after {
-  mask-image: url("../images/icons/like.svg");
+  -webkit-mask-image: url("../images/icons/like.svg");
+          mask-image: url("../images/icons/like.svg");
 }
 
 .nav-user-link:hover,
@@ -676,7 +681,8 @@ img {
 .form-input[type="number"],
 .form-input[type="number"]:hover,
 .form-input[type="number"]:focus {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   -moz-appearance: textfield;
 }
 
@@ -1013,7 +1019,8 @@ img {
   background-repeat: no-repeat;
   background-position: 94% 50%;
   background-size: 12px 9px;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   cursor: pointer;
 }
 
@@ -1352,14 +1359,15 @@ img {
   background-repeat: no-repeat;
   background-position: 95% 50%;
   cursor: pointer;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .modal-input-message {
   position: absolute;
   top: 100%;
   left: 20px;
-  margin-top: 25px;
+  margin-top: 4px;
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
