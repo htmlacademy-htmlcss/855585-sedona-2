@@ -302,22 +302,22 @@ img {
   width: 44px;
   min-height: 64px;
   -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
   -webkit-mask-position: center;
-          mask-position: center;
+  mask-position: center;
   -webkit-mask-size: 21px 20px;
-          mask-size: 21px 20px;
+  mask-size: 21px 20px;
   background: currentColor;
 }
 
 .nav-user-link-search::after {
   -webkit-mask-image: url("../images/icons/search.svg");
-          mask-image: url("../images/icons/search.svg");
+  mask-image: url("../images/icons/search.svg");
 }
 
 .nav-user-link-favorites::after {
   -webkit-mask-image: url("../images/icons/like.svg");
-          mask-image: url("../images/icons/like.svg");
+  mask-image: url("../images/icons/like.svg");
 }
 
 .nav-user-link:hover,
@@ -682,7 +682,7 @@ img {
 .form-input[type="number"]:hover,
 .form-input[type="number"]:focus {
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   -moz-appearance: textfield;
 }
 
@@ -1020,7 +1020,7 @@ img {
   background-position: 94% 50%;
   background-size: 12px 9px;
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   cursor: pointer;
 }
 
@@ -1254,9 +1254,10 @@ img {
   min-width: 717px;
   min-height: 576px;
   transform: translate(-50%, -50%);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
 }
 
-.modal-form {
+.search-form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 88px;
@@ -1310,38 +1311,37 @@ img {
   opacity: 0.3;
 }
 
-.modal-field-wrapper {
+.field-group {
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.modal-field-wrapper-check-in,
-.modal-field-wrapper-check-out {
+.field-group-check-in,
+.field-group-check-out {
   grid-column: 1 / 3;
   justify-content: space-between;
 }
 
-.modal-field-wrapper-adults {
+.field-group-adults {
   grid-column: 1 / 2;
   gap: 46px;
 }
 
-.modal-field-wrapper-kids {
+.field-group-kids {
   grid-column: 2 / 3;
 }
 
-.modal-input-wrapper {
+.form-wrapper {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
   min-width: 110px;
   border-radius: 4px;
   background-color: #f2f2f2;
 }
 
-.modal-input {
+.form-field {
   height: 48px;
   font-size: 18px;
   font-weight: 700;
@@ -1349,21 +1349,21 @@ img {
   border-radius: 4px;
 }
 
-.modal-label-date {
+.form-label-date {
   max-width: 120px;
 }
 
-.modal-input-date {
+.form-field-date {
   min-width: 440px;
   background-image: url("../images/icons/date.svg");
   background-repeat: no-repeat;
   background-position: 95% 50%;
   cursor: pointer;
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
-.modal-input-message {
+.form-message {
   position: absolute;
   top: 100%;
   left: 20px;
@@ -1374,29 +1374,29 @@ img {
   color: #333333;
 }
 
-.modal-input-message-error {
+.form-message-error {
   color: #ff5757;
 }
 
-.modal-input-wrapper-kids {
+.number-controls-kids {
   margin-left: 48px;
 }
 
-.modal-label-guests-adults {
+.form-label-adults {
   margin-right: 46px;
 }
 
-.modal-label-guests-kids {
+.form-label-kids {
   margin-right: 10px;
 }
 
-.modal-input-guests {
+.form-field-guests {
   max-width: 30px;
   padding: 5px;
   text-align: center;
 }
 
-.modal-button-input {
+.number-controls-button {
   min-width: 40px;
   min-height: 48px;
   padding: 0;
@@ -1405,24 +1405,24 @@ img {
   transition: none;
 }
 
-.modal-button-input-minus:hover,
-.modal-button-input-plus:hover {
+.number-controls-minus:hover,
+.number-controls-plus:hover {
   color: #000000;
 }
 
-.modal-button-input-minus:focus .modal-input-button-icon,
-.modal-button-input-plus:focus .modal-input-button-icon {
+.number-controls-minus:focus .number-controls-icon,
+.number-controls-plus:focus .number-controls-icon {
   color: #000000;
   border-radius: 4px;
   outline: 3px solid #83B3D3;
 }
 
-.modal-button-input-minus:active,
-.modal-button-input-plus:active {
+.number-controls-minus:active,
+.number-controls-plus:active {
   color: rgba(0, 0, 0, 0.3)
 }
 
-.modal-input-button-icon {
+.number-controls-icon {
   display: block;
   margin: 0 auto;
 }
@@ -1479,7 +1479,7 @@ img {
   border-color: transparent transparent #333333 transparent;
 }
 
-.modal-button {
+.form-button {
   grid-column: 1 / 3;
   min-height: 60px;
   line-height: 24px;
