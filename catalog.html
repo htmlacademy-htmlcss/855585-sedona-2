@@ -44,7 +44,7 @@
           </ul>
         </nav>
       </header>
-      <main class="catalog-page main__container" data-test="main">
+      <main class="main" data-test="main">
         <section class="catalog-page__head" data-test="filter">
           <div class="container">
             <h1 class="catalog-page__title">Гостиницы Седоны</h1>
@@ -112,7 +112,7 @@
               </fieldset>
               <fieldset class="filter__fieldset">
                 <legend class="filter__legend">Стоимость, ₽:</legend>
-                <div class="range__container">
+                <div class="range">
                   <label class="range__label">
                     <input class="range__input form__input" type="number" name="from" value="0" min="0" max="9000">
                     <span class="range__label-text">от</span>
@@ -140,8 +140,8 @@
         <section class="catalog" data-test="catalog">
           <div class="container">
             <header class="catalog__header">
-              <h2 class="catalog__title lead__title title-h-two">Найдено гостиниц: <span>38</span></h2>
-              <select class="catalog__select select__control" id="select-sort" aria-label="Сортировка">
+              <h2 class="catalog__title title-h-two">Найдено гостиниц: <span>38</span></h2>
+              <select class="select" id="select-sort" aria-label="Сортировка">
                 <option class="select__option" value="cheap">Сначала дешевые</option>
                 <option class="select__option" value="popular">Сначала популярные</option>
                 <option class="select__option" value="expensive">Сначала дорогие</option>
@@ -159,7 +159,7 @@
                 </a>
               </div>
             </header>
-            <ul class="catalog__list catalog-card__list">
+            <ul class="catalog__list">
               <li class="catalog__item catalog-card">
                 <article class="catalog-card__content">
                   <a class="catalog-card__link" href="#">
@@ -173,7 +173,7 @@
                   <p class="catalog-card__price">От 4000 ₽</p>
                   <a class="catalog-card__button button button--primary" href="#">Подробнее</a>
                   <button class="catalog-card__button button button--secondary" type="button">В избранное</button>
-                  <div class="catalog-card__stars four-stars">
+                  <div class="catalog-card__stars">
                     <span class="catalog-card__star"></span>
                     <span class="catalog-card__star"></span>
                     <span class="catalog-card__star"></span>
@@ -197,7 +197,7 @@
                   <a class="catalog-card__button button button--primary" href="#">Подробнее</a>
                   <button class="catalog-card__button button button--selected" type="button">В
                     избранном</button>
-                  <div class="catalog-card__stars four-stars">
+                  <div class="catalog-card__stars">
                     <span class="catalog-card__star"></span>
                     <span class="catalog-card__star"></span>
                     <span class="catalog-card__star"></span>
@@ -221,7 +221,7 @@
                   <a class="catalog-card__button button button--primary" href="#">Подробнее</a>
                   <button class="catalog-card__button button button--secondary" type="button">В
                     избранное</button>
-                  <div class="catalog-card__stars three-stars">
+                  <div class="catalog-card__stars">
                     <span class="catalog-card__star"></span>
                     <span class="catalog-card__star"></span>
                     <span class="catalog-card__star"></span>
@@ -243,7 +243,7 @@
                   <p class="catalog-card__price">От 1500 ₽</p>
                   <a class="catalog-card__button button button--primary" href="#">Подробнее</a>
                   <button class="catalog-card__button button button--secondary" type="button">В избранное</button>
-                  <div class="catalog-card__stars two-stars">
+                  <div class="catalog-card__stars">
                     <span class="catalog-card__star"></span>
                     <span class="catalog-card__star"></span>
                     <span class="visually-hidden">Звездность: 2 звезды</span>
@@ -252,7 +252,7 @@
                 </article>
               </li>
             </ul>
-            <ul class="pagination__list">
+            <ul class="pagination">
               <li class="pagination__item">
                 <a class="pagination__link pagination__link--current">1</a>
               </li>

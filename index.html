@@ -44,7 +44,7 @@
           </ul>
         </nav>
       </header>
-      <main class="main-index main__container" data-test="main">
+      <main class="main" data-test="main">
         <section class="intro" data-test="hero">
           <h1 class="visually-hidden">Седона — туристический городок в Аризоне</h1>
           <img class="intro__img" src="images/welcome.svg" width="458" height="352"
@@ -57,8 +57,8 @@
             <p class="lead__description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           </header>
           <ul class="advantages__list">
-            <li class="advantages__item advantages__item--dark advantages-card">
-              <div class="advantages-card__content">
+            <li class="advantages__item advantages__item--dark">
+              <div class="advantages-card">
                 <p class="advantages-card__title title-h-three">Настоящий городок</p>
                 <p class="advantages-card__description">Седона — не аттракцион для туристов, там течёт своя
                   жизнь</p>
@@ -66,28 +66,28 @@
               <img class="advantages__img" src="images/advantages/advantages-1.jpg" width="800" height="385"
                 alt="Здание на фоне горы в Седоне">
             </li>
-            <li class="advantages__item advantages-card">
-              <div class="advantages-card__content">
+            <li class="advantages__item">
+              <div class="advantages-card">
                 <p class="advantages-card__title title-h-three">Небольшая площадь</p>
                 <p class="advantages-card__description">Все достопримечательности находятся очень близко</p>
               </div>
             </li>
-            <li class="advantages__item advantages__item--accent advantages-card">
-              <div class="advantages-card__content">
+            <li class="advantages__item advantages__item--accent">
+              <div class="advantages-card">
                 <p class="advantages-card__title title-h-three">Красивая дорога</p>
                 <p class="advantages-card__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
-            <li class="advantages__item advantages-card">
-              <div class="advantages-card__content">
+            <li class="advantages__item">
+              <div class="advantages-card">
                 <p class="advantages-card__title title-h-three">Мало туристов</p>
                 <p class="advantages-card__description">Большинство едет в Гранд Каньон и толпится там</p>
               </div>
             </li>
-            <li class="advantages__item advantages__item--dark advantages-card">
+            <li class="advantages__item advantages__item--dark">
               <img class="advantages__img" src="images/advantages/advantages-2.jpg" width="800" height="385"
                 alt="Мост дьявола">
-              <div class="advantages-card__content">
+              <div class="advantages-card">
                 <p class="advantages-card__title title-h-three">Там есть <br>мост дьявола</p>
                 <p class="advantages-card__description">Да, по нему можно пройти! Если вы осмелитесь,
                   разумеется</p>
@@ -125,7 +125,7 @@
             <p class="lead__description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
               гостиниц в Седоне</p>
           </div>
-          <button class="booking__button button button--primary button--lg button--open" type="button">Поиск гостиницы в
+          <button class="booking__button button button--primary button--lg js-button-open" type="button">Поиск гостиницы в
             Седоне</button>
         </section>
         <section class="subscribe subscribe--with-image" data-test="subscribe">
@@ -196,69 +196,73 @@
       </footer>
       <section class="modal overlay">
         <div class="modal__container">
-          <button class="modal__close-button" type="button">
-            <span class="visually-hidden">Закрыть.</span>
-          </button>
           <div class="modal__content">
             <h2 class="modal__title lead__title title-h-two">Поиск гостиницы в Седоне</h2>
+            <button class="modal__close-button" type="button">
+              <span class="visually-hidden">Закрыть.</span>
+            </button>
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
               <div class="search-form__field search-form__field--check-in">
-                <label class="search-form__label search-form__label--date" for="check-in-date">Дата Заезда:</label>
+                <label class="search-form__label" for="check-in-date">Дата Заезда:</label>
                 <div class="search-form__wrapper">
-                  <input class="search-form__input search-form__input--date form__input" type="text" name="check-in" id="check-in-date"
+                  <input class="search-form__input search-form__input--long form__input" type="text" name="check-in" id="check-in-date"
                     value="27 апреля 2020" required>
                   <span class="search-form__message search-form__message--error">Мы не можем отправить вас в
                     прошлое.</span>
                 </div>
               </div>
               <div class="search-form__field search-form__field--check-out">
-                <label class="search-form__label search-form__label--date" for="check-out-date">Дата Выезда:</label>
+                <label class="search-form__label" for="check-out-date">Дата Выезда:</label>
                 <div class="search-form__wrapper">
-                  <input class="search-form__input search-form__input--date form__input" type="text" name="check-out" id="check-out-date"
+                  <input class="search-form__input search-form__input--long form__input" type="text" name="check-out" id="check-out-date"
                     value="1 сентября 2023" required>
                   <span class="search-form__message">На эти даты есть свободные номера. Пока есть.</span>
                 </div>
               </div>
-              <div class="search-form__field search-form__field--adults">
-                <label class="search-form__label search-form__label--adults" for="adults">Взрослые:</label>
-                <div class="search-form__wrapper number-controls number-controls__adults">
-                  <button class="button number-controls__button number-controls--minus" type="button">
+              <div class="search-form__field">
+                <label class="search-form__label" for="adults">Взрослые:</label>
+                <div class="number-controls">
+                  <button class="button number-controls__button" type="button">
                     <svg class="number-controls__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                       fill="currentColor" viewBox="0 0 20 20">
                       <path d="M3 9v2h14V9H3Z" />
                     </svg>
+                    <span class="visually-hidden">Минус</span>
                   </button>
-                  <input class="search-form__input search-form__input--guests form__input" type="number" name="guests-adults" id="adults"
+                  <input class="search-form__input search-form__input--short form__input" type="number" name="guests-adults" id="adults"
                     value="2">
-                  <button class="button number-controls__button number-controls--plus" type="button">
+                  <button class="button number-controls__button" type="button">
                     <svg class="number-controls__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                       fill="currentColor" viewBox="0 0 20 20">
                       <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
                     </svg>
+                    <span class="visually-hidden">Плюс</span>
                   </button>
                 </div>
               </div>
-              <div class="search-form__field search-form__field--kids">
+              <div class="search-form__field">
                 <label class="search-form__label search-form__label--kids" for="kids">Дети:</label>
                 <span class="tooltip">
                   <button class="tooltip__toggle" type="button"></button>
                   <span class="tooltip__text" role="tooltip">Укажите количество детей, которые будут с вами, возраст
                     которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                 </span>
-                <div class="search-form__wrapper number-controls number-controls--kids">
-                  <button class="button number-controls__button number-controls--minus" type="button">
+                <div class="number-controls number-controls--kids">
+                  <button class="button number-controls__button" type="button">
                     <svg class="number-controls__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                       fill="currentColor" viewBox="0 0 20 20">
                       <path d="M3 9v2h14V9H3Z" />
                     </svg>
+                  <span class="visually-hidden">Минус</span>
                   </button>
-                  <input class="search-form__input search-form__input--guests form__input" type="number" name="guests-kids" id="kids"
+                  <input class="search-form__input search-form__input--short form__input" type="number" name="guests-kids" id="kids"
                     value="2">
-                  <button class="button number-controls__button number-controls--plus" type="button">
+                  <button class="button number-controls__button" type="button">
                     <svg class="number-controls__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                       fill="currentColor" viewBox="0 0 20 20">
                       <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
                     </svg>
+                    <span class="visually-hidden">Плюс</span>
                   </button>
                 </div>
               </div>
