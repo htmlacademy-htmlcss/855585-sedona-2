@@ -201,7 +201,7 @@ img {
 }
 
 .page-header__button {
-  min-width: 160px;
+  width: 160px;
   margin-left: 20px;
 }
 
@@ -792,13 +792,14 @@ img {
 }
 
 .filter__fieldset {
+  flex-basis: min-content;
   padding: 0;
   margin: 0;
   border: none;
 }
 
 .filter__fieldset:nth-child(2) {
-  margin-right: auto;
+  margin-right: 81px;
 }
 
 .filter__legend {
@@ -1074,7 +1075,7 @@ img {
 .catalog__list {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 340px);
   justify-content: center;
   gap: 20px;
   padding: 0;
@@ -1092,9 +1093,15 @@ img {
   background-color: #e5e5e5;
 }
 
+.catalog-card {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
 .catalog-card__content{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 140px);
+  align-items: start;
   row-gap: 16px;
   column-gap: 20px;
   padding: 20px;
@@ -1139,6 +1146,7 @@ img {
 }
 
 .catalog-card__stars {
+  align-self: center;
   display: flex;
   align-items: center;
   gap: 6px;
@@ -1236,21 +1244,22 @@ img {
 }
 
 .modal__container {
-  display: none;
-  padding: 64px 70px;
-  border-radius: 30px;
-  background-color: #ffffff;
-}
-
-.js-container-open {
   position: fixed;
   top: 50%;
   left: 50%;
-  display: block;
+  display: none;
+  width: 100%;
   max-width: 717px;
   min-height: 576px;
+  padding: 64px 70px;
+  border-radius: 30px;
+  background-color: #ffffff;
   transform: translate(-50%, -50%);
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.js-container-open {
+  display: block;
 }
 
 .modal__title {
@@ -1321,6 +1330,7 @@ img {
 .search-form__wrapper {
   position: relative;
   display: flex;
+  flex-grow: 1;
   align-items: center;
   border-radius: 4px;
   background-color: #f2f2f2;
@@ -1334,8 +1344,8 @@ img {
   border-radius: 4px;
 }
 
-.search-form__input--long {
-  min-width: 440px;
+.search-form__input--date {
+  width: 100%;
   background-image: url("../images/icons/date.svg");
   background-repeat: no-repeat;
   background-position: 95% 50%;
@@ -1362,6 +1372,7 @@ img {
 .search-form__label {
   display: block;
   width: 137px;
+  padding-right: 5px;
 }
 
 .search-form__label--kids {
@@ -1380,10 +1391,7 @@ img {
   min-width: 110px;
   border-radius: 4px;
   background-color: #f2f2f2;
-}
-
-.number-controls--kids {
-  margin-left: 48px;
+  margin-left: auto;
 }
 
 .number-controls__button {
@@ -1402,7 +1410,7 @@ img {
 .number-controls__button:focus .number-controls__icon {
   color: #000000;
   border-radius: 4px;
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .number-controls__button:active .number-controls__icon {
@@ -1453,6 +1461,10 @@ img {
 
 .tooltip__toggle:hover + .tooltip__text {
   display: block;
+}
+
+.tooltip__toggle:focus-visible {
+  outline: 3px solid #83b3d3;
 }
 
 .tooltip__text::before {
